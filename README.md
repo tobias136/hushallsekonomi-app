@@ -1,2 +1,2 @@
 # hushallsekonomi-app
-Budgeting made easier
+Budget
