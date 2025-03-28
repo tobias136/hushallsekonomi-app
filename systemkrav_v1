@@ -1,0 +1,36 @@
+Krav för import för transaktioner:
+a1. användaren skall kunna importera transaktioner via CSV-fil.
+a2. låg prio krav: systemet skall automatiskt hämta transaktioner via bankens API
+
+Kategorisering:
+a. det skall finnas fyra kategorier: wants, needs, necessities, savings
+b. Vid nya transaktioner skall användaren promptas att välja kategori om inte systemet känner igen beskrivningen
+c. systemet skall minnas tidigare val på detaljnivå, baserat på transaktionsbeskrivning
+
+Rapportering och visualisering:
+a. det skall finnas en månatlig sammanställning per kategori i form av siffror
+b. det skall finnas en månatlig sammanställning per kategori i form av tabeller och diagram (låg prio)
+c. detta skall presenteras i text
+d. detta skall kunna presenteras grafiskt (låg prio)
+
+Budgetering och mål:
+a. användaren skall kunna sätta en gräns per kategori och få en varning om den närmar sig gränsen
+b. användaren skall kunna förprogrammera köp för att sätta en budget. Ex1. budget för 2 luncher á 120 SEK per vecka under en månad. Ex2. planerade inköp i en kategori såsom en jacka för 2500 SEK
+c1. förprogrammering skall kunna väljas att vara återkommande. Användaren skall promptas att välja om den vill att köpet skall vara återkommande. Likt en kalenderfunktion
+c2. om användaren valt att köpet skall vara återkommande så skall användaren få alternativet om hur ofta. Formatet skall vara: val1: antal gånger. val2: varje dag, varje vecka, varje månad
+d. förprogrammering skall baseras på transaktionsbeskrivning
+e. förprogrammering skall vara tillgängligt i form av en funktion som användaren själv frågar efter
+
+Historik och trend:
+a. användaren skall ha tillgång till all historik, månad för månad
+b. systemet skall kunna jämföra månad för månad (låg prio)
+
+Användarinteraktion:
+a. till början räcker det med att programmet kör genom ett CLI
+b1. användaren skall kunna ändra kategori i efterhand
+b2. om användaren väljer att ändra kategori i efterhand skall användaren promptas om att välja om ändringen skall ske retroaktivt för tidigare köp med samma beskrivning
+b3. om användaren väljer att ändra kategori i efterhand skall användaren promptas om att välja om ändringen skall ske för alla framtida köp med samma beskrivning
+
+Prestanda och skalbarhet:
+a. till en början finns ingen förväntning på data
+b. frågan om antal användare får vara öppen ett tag till
