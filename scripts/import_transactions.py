@@ -1,105 +1,82 @@
-import sys
+import pandas as pd
 import os
-import csv
+import json
+from datetime import datetime
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
-
-from app.database import Database
-
-VALID_CATEGORIES = ["wants", "needs", "necessities", "savings"]
-
-def clean_amount(amount_str):
-    # Byt ut mellanslag och komma mot punkt för att kunna göra float
-    cleaned = amount_str.replace(" ", "").replace(",", ".")
-    return float(cleaned)
-
-def prompt_for_category(description):
-    """Fråga användaren om kategori för en ny beskrivning.
-    Args: description (str): Beskrivning av transaktionen som saknar kategori.
-    Returns: str: Den valda kategorin från VALID_CATEGORIES.
+def import_csv(filnamn: str):
     """
-    print(f"\nNy beskrivning upptäckt: '{description}'")
-    print("Välj en kategori:")
-    for i, cat in enumerate(VALID_CATEGORIES, start=1):
-        print(f"{i}. {cat}")
-
-    while True:
-        try:
-            choice = input("Ange siffra för kategori: ")
-            if choice.isdigit():
-                choice = int(choice)
-                if 1 <= choice <= len(VALID_CATEGORIES):
-                    return VALID_CATEGORIES[choice - 1]
-            print("Ogiltigt val. Försök igen.")
-        except KeyboardInterrupt:
-            print("Användern avbröt inmatningen.")
-            return None
-
-def import_transactions_from_csv(csv_file):
-    db = Database()
+    Importerar transaktioner från CSV med metainfo före datan.
+    Hanterar tusentalsavgränsare och olika datumformat.
+    """
     try:
-        with open(csv_file, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter=';', quotechar='"')
+        with open(filnamn, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
 
-            # Hoppa över kontoinformation (2 rader med saldo etc.)
-            next(reader)  # "Kontonummer";"Kontonamn";...
-            next(reader)  # "2342342342";"Lönekonto";...
+        start_line = None
+        for i, line in enumerate(lines):
+            if 'Transaktionsdatum' in line:
+                start_line = i
+                break
 
-            # Ev. tom rad – om din fil inte har en extra tom rad, kommentera ut raden nedan
-            empty_line = next(reader)
+        if start_line is None:
+            print("Kunde inte hitta rubrikraden med 'Transaktionsdatum'.")
+            return []
 
-            # Rubrikrad för transaktioner:
-            header = next(reader)
-            # header ex: ["Bokföringsdatum", "Transaktionsdatum", "Transaktionstyp", "Meddelande", "Belopp"]
+        df = pd.read_csv(filnamn, sep=';', skiprows=start_line, on_bad_lines='skip')
+        df.columns = df.columns.str.strip().str.strip('"')
 
-            count_imported = 0
+        print("Kolumner i transaktionsdelen:", list(df.columns))  # Debug
 
-            for row in reader:
-                if len(row) < 5:
-                    # Tom eller ofullständig rad
-                    continue
+        df = df.rename(columns={
+            'Transaktionsdatum': 'datum',
+            'Transaktionstyp': 'beskrivning',
+            'Belopp': 'belopp'
+        })
 
-                booking_date = row[0]       # "2024-11-29"
-                transaction_date = row[1]   # "2024-11-29"
-                transaction_type = row[2]   # "Kortköp"
-                message = row[3]            # ex: "GOOGLE *Google One..."
-                amount_str = row[4]         # ex: "-19,00"
+        df['datum'] = pd.to_datetime(df['datum'], errors='coerce')
 
-                # Försök rensa och konvertera beloppet
-                try:
-                    amount = clean_amount(amount_str)
-                except ValueError:
-                    print(f"Ogiltigt belopp på raden: {row}")
-                    continue
+        # Ta bort mellanslag + byt komma till punkt → konvertera till float
+        df['belopp'] = (
+            df['belopp']
+            .astype(str)
+            .str.replace(' ', '', regex=False)
+            .str.replace(',', '.', regex=False)
+            .astype(float)
+        )
 
-                # Kolla om beskrivningen är känd
-                known_cat = db.get_category_for_description(message)
-                if known_cat is None:
-                    # Ingen känd kategori, fråga användaren
-                    category = prompt_for_category(message)
-                    db.add_known_category(message, category)
-                else:
-                    category = known_cat
+        transactions = df[['datum', 'beskrivning', 'belopp']].dropna().to_dict(orient='records')
 
-                # Lägg till transaktionen
-                trans_id = db.add_transaction(transaction_date, amount, message, category)
-                count_imported += 1
+        print("Förhandsgranskning:")
+        for t in transactions[:5]:
+            print(t)
 
-                print(f"Importerat transaktion {trans_id} (beskrivning: {message}) med kategori '{category}'.")
-    finally:
-        db.close()
-        print(f"\nTotalt importerade transaktioner: {count_imported}")
+        return transactions
 
-if __name__ == "__main__":
-    # Fråga användaren om datum för CSV-filen
-    date_input = input("Ange datum (YYYY-MM-DD) för CSV-filen du vill läsa in: ")
-    # Bygg filnamnet utifrån datumet
-    # ex: "../csv/Lönekonto 2024-11-30.csv"
-    csv_file_path = os.path.join(BASE_DIR, "csv", f"Lönekonto {date_input}.csv")
+    except Exception as e:
+        print(f"Fel vid import: {e}")
+        return []
 
-    if not os.path.exists(csv_file_path):
-        print(f"Filen '{csv_file_path}' existerar inte. Kontrollera datum eller filnamn.")
-        sys.exit(1)
 
-    import_transactions_from_csv(csv_file_path)
+def save_to_json(transactions, export_dir='data'):
+    """
+    Sparar transaktioner till en .json-fil, med datumen som ISO-strängar.
+    """
+    if not transactions:
+        print("Inga transaktioner att spara.")
+        return
+
+    # Konvertera datum till ISO-format (YYYY-MM-DD)
+    for t in transactions:
+        if isinstance(t['datum'], pd.Timestamp):
+            t['datum'] = t['datum'].date().isoformat()
+
+    os.makedirs(export_dir, exist_ok=True)
+    datum_str = datetime.now().strftime('%Y-%m-%d')
+    export_path = os.path.join(export_dir, f"import_{datum_str}.json")
+
+    try:
+        with open(export_path, 'w', encoding='utf-8') as f:
+            json.dump(transactions, f, ensure_ascii=False, indent=2)
+        print(f"Transaktioner sparade till: {export_path}")
+    except Exception as e:
+        print(f"Fel vid export till JSON: {e}")
