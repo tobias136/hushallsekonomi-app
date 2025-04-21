@@ -1,5 +1,13 @@
 Krav för import för transaktioner:
 a1. användaren skall kunna importera transaktioner via CSV-fil.
+a1.a CSV-filen innehåller fem kolumner:
+"Bokföringsdatum";"Transaktionsdatum";"Transaktionstyp";"Meddelande";"Belopp"
+där:
+Bokförningsdatum är datum då köpet bokfördes i bankens system (ej viktigt initialt)
+Transaktionsdatum är det datum då köpet genomfördes
+Transaktionstyp beskriver vad för köp som gjorts (vilken butik etc.)
+Meddelande är av användaren tillagt meddelande som tex varför en Swish har genomförts
+Belopp är beloppet av transaktionen
 a2. låg prio krav: systemet skall automatiskt hämta transaktioner via bankens API
 
 Kategorisering:
