@@ -1,0 +1,64 @@
+# Projektöversikt: hushallsekonomi-app (2025-04-21)
+
+## ✅ Implementerat
+
+### 1. Import
+- CSV-import via CLI (med auto-hantering av metainfo i filen)
+- Datum och belopp normaliseras
+- JSON-export till `data/import_YYYY-MM-DD.json`
+
+### 2. CLI
+- CLI-skelett byggt med `click`
+- Kommando: `importera`
+
+---
+
+## 🔀 Pågående / planerat
+
+### 3. Kategorisering
+- Auto-matchning mot tidigare kategorival
+- CLI-prompt om ingen match
+- Spara till `json/kategorier.json`
+
+### 4. Rapportering
+- CLI-rapport per kategori (siffror per månad)
+- Tabeller och diagram (låg prio)
+
+### 5. Budgetering
+- Gränser per kategori
+- Förprogrammerade och återkommande köp
+
+### 6. Historik & trender
+- Månadshistorik
+- Månadsjämförelse (låg prio)
+
+---
+
+## 🌀 Struktur / mappar
+- `app/CLI/` – CLI-gränssnitt
+- `scripts/import_transactions.py` – importer & export
+- `scripts/categorizer.py` – kommande kategori-API
+- `scripts/reports.py` – rapportgenerator
+- `scripts/budget.py` – budgetlogik
+- `data/` – importerade json-data
+- `json/` – kategoridefinitioner
+- `tests/` – testfall (TBD)
+
+---
+
+## ⭐ Förbättringar på kravspec
+- JSON-export kravet integrerat i importen (tidigare ej definierat)
+- CLI-kommandon specificerade för rapporter och budget (tidigare implicit)
+- Kategorier sparas i `json/` som persistent minne (tidigare ej nämnt tydligt)
+
+---
+
+## 🔄 Nästa steg (enligt systemkrav + projektöversikt)
+- Implementera kategoriseringsflödet:
+  1. Ladda tidigare kategorier
+  2. Auto-kategorisera
+  3. Prompt för nya beskrivningar
+  4. Spara nya val
+
+Klar att påbörja nästa arbetspass!
+

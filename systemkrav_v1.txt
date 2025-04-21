@@ -1,17 +1,28 @@
 Krav för import för transaktioner:
 a1. användaren skall kunna importera transaktioner via CSV-fil.
+a1.a. CSV-filen innehåller fem kolumner:
+"Bokföringsdatum";"Transaktionsdatum";"Transaktionstyp";"Meddelande";"Belopp"
+där:
+Bokförningsdatum är datum då köpet bokfördes i bankens system (ej viktigt initialt)
+Transaktionsdatum är det datum då köpet genomfördes
+Transaktionstyp beskriver vad för köp som gjorts (vilken butik etc.)
+Meddelande är av användaren tillagt meddelande som tex varför en Swish har genomförts
+Belopp är beloppet av transaktionen
+a1.b. export till .json krävs efter import
 a2. låg prio krav: systemet skall automatiskt hämta transaktioner via bankens API
 
 Kategorisering:
 a. det skall finnas fyra kategorier: wants, needs, necessities, savings
 b. Vid nya transaktioner skall användaren promptas att välja kategori om inte systemet känner igen beskrivningen
 c. systemet skall minnas tidigare val på detaljnivå, baserat på transaktionsbeskrivning
+d. kategorier skall sparas i filformatet .json
 
 Rapportering och visualisering:
 a. det skall finnas en månatlig sammanställning per kategori i form av siffror
 b. det skall finnas en månatlig sammanställning per kategori i form av tabeller och diagram (låg prio)
 c. detta skall presenteras i text
 d. detta skall kunna presenteras grafiskt (låg prio)
+e. rapporter skall ha CLI-kommandon per typ
 
 Budgetering och mål:
 a. användaren skall kunna sätta en gräns per kategori och få en varning om den närmar sig gränsen
