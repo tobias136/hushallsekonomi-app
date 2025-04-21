@@ -1,0 +1,69 @@
+# Systemkrav för hushallsekonomi-app (version 2025-04-21)
+
+## 1. Import av transaktioner
+**a1.** Användaren ska kunna importera transaktioner via CSV-fil med följande hantering:
+- Automatisk detektion av rad där transaktionsdata börjar
+- Konvertering av datum till ISO-format (YYYY-MM-DD)
+- Konvertering av belopp från t.ex. "3 400,00" till float -3400.00
+- Export av importresultat till `data/import_YYYY-MM-DD.json`
+
+**a2.** (Låg prioritet) Systemet ska kunna hämta transaktioner via bankens API.
+
+---
+
+## 2. Kategorisering
+**a.** Det ska finnas fyra kategorier: `wants`, `needs`, `necessities`, `savings`
+
+**b.** Vid nya transaktioner där beskrivningen är okänd:
+- Användaren promptas att välja kategori via CLI
+
+**c.** Systemet ska minnas tidigare val per beskrivning:
+- Val sparas i `json/kategorier.json`
+- Dessa används vid framtida importer för auto-kategorisering
+
+---
+
+## 3. Rapportering och visualisering
+**a.** Det ska finnas en månatlig sammanställning per kategori i sifferform
+**b.** (Låg prio) Sammanställning i tabeller och diagram
+**c.** Sammanställning ska kunna presenteras i text via CLI
+**d.** (Låg prio) Visualisering i grafisk form
+
+---
+
+## 4. Budgetering och mål
+**a.** Användaren ska kunna sätta en gräns per kategori
+- Varning om konsumtionen närmar sig gränsen
+
+**b.** Användaren ska kunna förprogrammera köp:
+- Ex: "2 luncher á 120 kr/vecka under en månad"
+- Ex: "Jacka för 2500 kr i maj"
+
+**c1.** Förprogrammering kan vara återkommande
+**c2.** Alternativ för återkommande:
+- Antal gånger
+- Varje dag / vecka / månad
+
+**d.** Förprogrammering baseras på transaktionsbeskrivning
+**e.** Förprogrammering triggas via CLI-kommando
+
+---
+
+## 5. Historik och trender
+**a.** Användaren ska ha tillgång till historik månad för månad
+**b.** (Låg prio) Systemet ska kunna jämföra månader mot varandra
+
+---
+
+## 6. Användarinteraktion (CLI)
+**a.** CLI är det primära gränssnittet i första versionen
+
+**b1.** Användaren ska kunna ändra kategori i efterhand
+**b2.** Användaren promptas om ändringen ska gälla retroaktivt
+**b3.** Användaren promptas om ändringen ska gälla framtida transaktioner
+
+---
+
+## 7. Prestanda och skalbarhet
+**a.** Inga krav på stordata i nuläget
+**b.** Frågan om flera användare förblir öppen tills vidare
