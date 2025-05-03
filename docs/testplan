@@ -1,0 +1,59 @@
+✅ Mini-Testplan – Verifiera Import och Kategorisering
+1. Förbered testfil
+Använd csv/test_bank.csv eller skapa en egen liten CSV med 3–5 rader.
+Viktigt: Fälten Transaktionstyp, Meddelande, och Belopp ska vara ifyllda.
+
+Exempel på rad:
+
+arduino
+Kopiera
+Redigera
+"2024-02-02";"2024-02-02";"Kortköp";"Amazon Prime,www.amazon.se,LU";"-59,00"
+2. Kör CLI-kommandot
+I terminalen, från projektroten:
+
+bash
+Kopiera
+Redigera
+python3 app/CLI/main.py importera csv/test_bank.csv
+3. Kontrollera i terminalen
+Du ska se utskrifter som:
+
+Kolumnnamn från CSV läses korrekt.
+
+3–5 transaktioner importeras.
+
+För varje transaktion:
+
+text
+Kopiera
+Redigera
+Transaktionstyp: Kortköp
+Meddelande: Amazon Prime,www.amazon.se,LU
+Välj kategori (wants / needs / necessities / savings):
+Skriv in kategori manuellt när du blir promptad.
+
+4. Kontrollera filer på disk
+data/kategorier.json ska finnas och innehålla poster som:
+
+json
+Kopiera
+Redigera
+{
+  "Kortköp - Amazon Prime,www.amazon.se,LU": "wants"
+}
+data/import_YYYY-MM-DD.json (t.ex. import_2025-04-27.json) ska sparas och innehålla transaktionerna inklusive "kategori"-fält.
+
+5. Kör om samma import igen
+Kör samma importera-kommando igen.
+
+Verifiera att programmet inte frågar igen om kategori på transaktioner du redan kategoriserat → de ska autokategoriseras direkt!
+
+🎯 Test godkänd om:
+Transaktionstyp och meddelande visas korrekt i prompten.
+
+Kategorival sparas och återanvänds.
+
+Filer skrivs ut korrekt under data/.
+
+Programmet kraschar inte och inga tomma kategorier skapas.

@@ -14,3 +14,30 @@ Strukturöversikt:
 TBD
 
 Budget
+
+
+--------------------------------------------
+Makefile
+--------------------------------------------
+ Vad du kan göra nu:
+
+Kommando	Effekt
+make reset	Raderar kategorier.json och import_*.json.
+make test	Kör alla enhetstester med pytest.
+make run-import	Importerar csv/test_bank.csv och kör hela kategoriseringsflödet.
+make format	Formaterar din kod enligt PEP8-standard.
+make lint	Kollar kodkvalitet, hittar misstag och ger förbättringstips.
+
+📌 Instruktioner för att börja använda:
+Lägg filen som Makefile i roten av hushallsekonomi-app/.
+
+Öppna terminalen i projektmappen.
+
+Kör exempelvis:
+
+bash
+Kopiera
+Redigera
+make reset
+make run-import
+make test
