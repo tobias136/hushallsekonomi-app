@@ -1,0 +1,37 @@
+[
+  {
+    "datum": "2025-04-26",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Uppharads Pizzeria,Uppharad,SE",
+    "belopp": -110.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-04-27",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "EasyPark,easypark.se,SE",
+    "belopp": -8.42,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-04-26",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Systembolaget,NOeDINGE,SE",
+    "belopp": -265.5,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-04-26",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Nextory cf12d,Stockholm,SE",
+    "belopp": -0.22,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-04-26",
+    "transaktionstyp": "Kontantinsättning",
+    "meddelande": "Nextory cf12d,Stockholm,SE",
+    "belopp": 0.22,
+    "kategori": "wants"
+  }
+]
