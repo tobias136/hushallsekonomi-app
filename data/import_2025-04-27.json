@@ -1,0 +1,72 @@
+[
+  {
+    "datum": "2024-02-02",
+    "transaktionstyp": "Swish till NAPRAPATLANDSLAGET MED ",
+    "meddelande": "",
+    "belopp": -855.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-02",
+    "transaktionstyp": "Swish till VÄSTRA GÖTALANDSREGIONE",
+    "meddelande": "Payment from IMATIS system.",
+    "belopp": -50.0,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Amazon Prime,www.amazon.se,LU",
+    "belopp": -59.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Swish till Carolin Svensson Johnso",
+    "meddelande": "Håkan Universeum",
+    "belopp": -450.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Swish till PER-OLOF LINDVALL",
+    "meddelande": "",
+    "belopp": -500.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Överföring",
+    "meddelande": "Tobias Danielsson",
+    "belopp": 3400.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Betalning",
+    "meddelande": "Rasmus Fogelmark AB",
+    "belopp": -3400.0,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Autogiro",
+    "meddelande": "LF Göteborg",
+    "belopp": -380.0,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Rabatt",
+    "meddelande": "Bankkort Privat 9006",
+    "belopp": 25.0,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2024-02-01",
+    "transaktionstyp": "Avg",
+    "meddelande": "Bankkort Privat 9006",
+    "belopp": -25.0,
+    "kategori": "needs"
+  }
+]
