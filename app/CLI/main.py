@@ -12,6 +12,7 @@ from app.categorizer.kategorisering import (
     spara_kategorier,
     kategorisera_transaktion,
 )
+from app.reports.reporting import generate_report
 
 
 @click.group()
@@ -51,6 +52,13 @@ def importera(filnamn):
         save_to_json(transactions)
 
         click.echo("Transaktioner har kategoriserats och sparats.")
+
+
+@cli.command()
+@click.argument("filepath", type=click.Path(exists=True))
+def report(filepath):
+    """Generate a monthly spending summary per category from a JSON transaction file."""
+    generate_report(filepath)
 
 
 if __name__ == "__main__":

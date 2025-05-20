@@ -41,3 +41,17 @@ Redigera
 make reset
 make run-import
 make test
+
+
+köra tester:
+pytest tests/
+# eller
+python -m unittest discover tests
+
+
+köra olika funktioner:
+    importera data och generera datafil:
+    python3 app/CLI/main.py importera csv/Lönekonto_test_april.csv
+
+    rapportering:
+    python3 app/CLI/main.py report data/import_2025-05-03.json
