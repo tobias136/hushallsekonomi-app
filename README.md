@@ -61,3 +61,38 @@ köra olika funktioner:
     python3 app/CLI/main.py report-latest --save markdown
     python3 app/CLI/main.py report-latest --save json
 
+    budget-check:
+    python3 app/CLI/main.py budget-check
+    med egna paths:
+    python3 app/CLI/main.py budget-check --budget-path=json/budget.json --transactions-path=data/import_2025-05-03.json
+
+
+
+Kör flöde från start till slut:
+1. Importera CSV
+bash
+Kopiera
+Redigera
+python3 app/CLI/main.py import --file csv/lonekonto_2025-05_verkliga.csv
+➡️ Skapar JSON-fil (t.ex. data/import_2025-05-21.json)
+
+2. Kategorisera transaktioner (om inte redan gjort)
+bash
+Kopiera
+Redigera
+python3 app/CLI/main.py categorize --file data/import_xxx.json
+➡️ Använder/uppdaterar kategorier.json
+
+3. Generera rapport
+bash
+Kopiera
+Redigera
+python3 app/CLI/main.py report-latest
+➡️ Terminalutskrift + eventuell export
+
+4. Kör budgetkontroll
+bash
+Kopiera
+Redigera
+python3 app/CLI/main.py budget-check
+➡️ Jämför utfall med budget.json

@@ -43,11 +43,11 @@ def kategorisera_transaktion(transaktion, kategorier):
         print(f"Meddelande: {meddelande}")
         while True:
             kategori = (
-                input("Välj kategori (wants / needs / necessities / savings): ")
+                input("Välj kategori (wants / needs / culture / savings / income): ")
                 .strip()
                 .lower()
             )
-            if kategori in {"wants", "needs", "necessities", "savings"}:
+            if kategori in {"wants", "needs", "culture", "savings", "income"}:
                 break
             else:
                 print("Felaktig inmatning. Försök igen.")

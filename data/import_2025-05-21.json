@@ -1,0 +1,44 @@
+[
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Vapiano,Göteborg,SE",
+    "belopp": -957.56,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kontantinsättning",
+    "meddelande": "Lindex,Sundsvall,SE",
+    "belopp": 268.52,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-26",
+    "transaktionstyp": "Överföring",
+    "meddelande": "Till sparkonto",
+    "belopp": -7000.0,
+    "kategori": "savings"
+  },
+  {
+    "datum": "2025-05-25",
+    "transaktionstyp": "Lön",
+    "meddelande": "Lön från arbetsgivare",
+    "belopp": 30000.0,
+    "kategori": "income"
+  },
+  {
+    "datum": "2025-05-27",
+    "transaktionstyp": "Kontantinsättning",
+    "meddelande": "Apotek Hjärtat,Borås,SE",
+    "belopp": 924.34,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-30",
+    "transaktionstyp": "Kontantinsättning",
+    "meddelande": "Circle K,Växjö,SE",
+    "belopp": 656.83,
+    "kategori": "needs"
+  }
+]
