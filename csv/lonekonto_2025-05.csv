@@ -1,0 +1,46 @@
+Kontonummer;Kontonamn;;Saldo;Tillgängligt belopp
+90249460426;Lönekonto;;35 766,29;35 766,29
+
+Bokföringsdatum;Transaktionsdatum;Transaktionstyp;Meddelande;Belopp
+2025-05-02;2025-05-01;Kontantinsättning;Butik 32,Stad,SE;957,56
+2025-05-02;2025-05-01;Kontantinsättning;Butik 53,Stad,SE;268,52
+2025-05-03;2025-05-02;Kortköp;Butik 13,Stad,SE;-588,79
+2025-05-05;2025-05-04;Kortköp;Butik 85,Stad,SE;-255,37
+2025-05-05;2025-05-04;Kontantinsättning;Butik 46,Stad,SE;808,48
+2025-05-06;2025-05-05;Kontantinsättning;Butik 53,Stad,SE;812,67
+2025-05-07;2025-05-06;Kontantinsättning;Butik 94,Stad,SE;302,71
+2025-05-07;2025-05-06;Kortköp;Butik 87,Stad,SE;-580,23
+2025-05-08;2025-05-07;Kortköp;Butik 8,Stad,SE;-639,84
+2025-05-09;2025-05-08;Kontantinsättning;Butik 94,Stad,SE;412,05
+2025-05-09;2025-05-08;Kontantinsättning;Butik 14,Stad,SE;897,95
+2025-05-11;2025-05-10;Kortköp;Butik 25,Stad,SE;-538,51
+2025-05-11;2025-05-10;Kortköp;Butik 69,Stad,SE;-369,44
+2025-05-12;2025-05-11;Kontantinsättning;Butik 18,Stad,SE;631,44
+2025-05-13;2025-05-12;Kontantinsättning;Butik 24,Stad,SE;783,94
+2025-05-13;2025-05-12;Kontantinsättning;Butik 60,Stad,SE;360,92
+2025-05-17;2025-05-16;Kortköp;Butik 10,Stad,SE;-449,37
+2025-05-18;2025-05-17;Kontantinsättning;Butik 71,Stad,SE;996,12
+2025-05-18;2025-05-17;Kortköp;Butik 7,Stad,SE;-719,90
+2025-05-18;2025-05-17;Kortköp;Butik 12,Stad,SE;-550,48
+2025-05-19;2025-05-18;Kortköp;Butik 22,Stad,SE;-614,06
+2025-05-20;2025-05-19;Kontantinsättning;Butik 63,Stad,SE;296,80
+2025-05-21;2025-05-20;Kontantinsättning;Butik 28,Stad,SE;379,76
+2025-05-21;2025-05-20;Kontantinsättning;Butik 8,Stad,SE;470,47
+2025-05-22;2025-05-21;Kortköp;Butik 49,Stad,SE;-670,65
+2025-05-22;2025-05-21;Kortköp;Butik 50,Stad,SE;-384,09
+2025-05-25;2025-05-25;Lön;Lön från arbetsgivare;30000,00
+2025-05-26;2025-05-26;Överföring;Till sparkonto;-7000,00
+2025-05-26;2025-05-25;Kontantinsättning;Butik 59,Stad,SE;376,17
+2025-05-26;2025-05-25;Kontantinsättning;Butik 55,Stad,SE;256,79
+2025-05-26;2025-05-25;Kontantinsättning;Butik 20,Stad,SE;704,88
+2025-05-27;2025-05-26;Kortköp;Butik 38,Stad,SE;-383,15
+2025-05-28;2025-05-27;Kortköp;Butik 8,Stad,SE;-924,34
+2025-05-28;2025-05-27;Kortköp;Butik 96,Stad,SE;-887,71
+2025-05-29;2025-05-28;Kontantinsättning;Butik 8,Stad,SE;256,69
+2025-05-30;2025-05-29;Kortköp;Butik 75,Stad,SE;-390,40
+2025-05-30;2025-05-29;Kontantinsättning;Butik 65,Stad,SE;735,18
+2025-05-31;2025-05-30;Kortköp;Butik 8,Stad,SE;-371,39
+2025-05-31;2025-05-30;Kortköp;Butik 24,Stad,SE;-305,85
+2025-05-31;2025-05-30;Kortköp;Butik 77,Stad,SE;-948,41
+2025-05-31;2025-05-30;Kortköp;Butik 87,Stad,SE;-656,83
+2025-06-01;2025-05-31;Kortköp;Butik 52,Stad,SE;-1062,09

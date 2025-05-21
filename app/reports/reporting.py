@@ -52,16 +52,24 @@ def print_report(summary):
             print(f"{category:15}: {total:.2f} SEK")
 
 
-def generate_report(filepath):
+def generate_report(filepath, export_format=None):
     """
-    Full reporting pipeline: load data, process it, and print the result.
+    Full reporting pipeline: load data, process it, print the result, and optionally save to file.
 
     Args:
         filepath (str): Path to the input transaction JSON file.
+        export_format (str|None): 'csv', 'markdown', or 'json' to save the report.
     """
     transactions = load_transactions(filepath)
     summary = group_by_month_and_category(transactions)
     print_report(summary)
+
+    if export_format == "csv":
+        save_report_to_csv(summary)
+    elif export_format == "markdown":
+        save_report_to_markdown(summary)
+    elif export_format == "json":
+        save_report_to_json(summary)
 
 
 def save_report_to_csv(summary, out_dir="reports"):

@@ -1,0 +1,46 @@
+Kontonummer;Kontonamn;;Saldo;Tillgängligt belopp
+90249460426;Lönekonto;;35 766,29;35 766,29
+
+Bokföringsdatum;Transaktionsdatum;Transaktionstyp;Meddelande;Belopp
+2025-05-02;2025-05-01;Kortköp;Vapiano,Göteborg,SE;-957,56
+2025-05-02;2025-05-01;Kontantinsättning;Lindex,Sundsvall,SE;268,52
+2025-05-03;2025-05-02;Kontantinsättning;Subway,Södertälje,SE;588,79
+2025-05-05;2025-05-04;Kortköp;EasyPark,Stockholm,SE;-255,37
+2025-05-05;2025-05-04;Kontantinsättning;Uppharads Pizzeria,Uppharad,SE;808,48
+2025-05-06;2025-05-05;Kortköp;Panduro,Falun,SE;-812,67
+2025-05-07;2025-05-06;Kortköp;McDonalds,Gävle,SE;-302,71
+2025-05-07;2025-05-06;Kontantinsättning;Elgiganten,Umeå,SE;580,23
+2025-05-08;2025-05-07;Kortköp;Intersport,Kristianstad,SE;-639,84
+2025-05-09;2025-05-08;Kortköp;Willys,Malmö,SE;-412,05
+2025-05-09;2025-05-08;Kortköp;Naturkompaniet,Umeå,SE;-897,95
+2025-05-11;2025-05-10;Kontantinsättning;NetOnNet,Borlänge,SE;538,51
+2025-05-11;2025-05-10;Kontantinsättning;Coop Extra,Stockholm,SE;369,44
+2025-05-12;2025-05-11;Kortköp;Svenssons i Lammhult,Stockholm,SE;-631,44
+2025-05-13;2025-05-12;Kontantinsättning;Nextory,Stockholm,SE;783,94
+2025-05-13;2025-05-12;Kortköp;Kicks,Luleå,SE;-360,92
+2025-05-17;2025-05-16;Kontantinsättning;ICA Supermarket,Göteborg,SE;449,37
+2025-05-18;2025-05-17;Kontantinsättning;Plantagen,Bromma,SE;996,12
+2025-05-18;2025-05-17;Kontantinsättning;Espresso House,Visby,SE;719,90
+2025-05-18;2025-05-17;Kortköp;SATS,Linköping,SE;-550,48
+2025-05-19;2025-05-18;Kortköp;Jula,Norrköping,SE;-614,06
+2025-05-20;2025-05-19;Kontantinsättning;Nextory cf12d,Stockholm,SE;296,80
+2025-05-21;2025-05-20;Kontantinsättning;Storytel,Stockholm,SE;379,76
+2025-05-21;2025-05-20;Kortköp;Lidl,Sundsvall,SE;-470,47
+2025-05-22;2025-05-21;Kortköp;Max Hamburgare,Skellefteå,SE;-670,65
+2025-05-22;2025-05-21;Kontantinsättning;Clas Ohlson,Örebro,SE;384,09
+2025-05-25;2025-05-25;Lön;Lön från arbetsgivare;30000,00
+2025-05-26;2025-05-26;Överföring;Till sparkonto;-7000,00
+2025-05-26;2025-05-25;Kortköp;Systembolaget,Karlstad,SE;-376,17
+2025-05-26;2025-05-25;Kontantinsättning;Biltema,Helsingborg,SE;256,79
+2025-05-26;2025-05-25;Kortköp;Granit,Kalmar,SE;-704,88
+2025-05-27;2025-05-26;Kontantinsättning;Åhléns,Östersund,SE;383,15
+2025-05-28;2025-05-27;Kontantinsättning;Apotek Hjärtat,Borås,SE;924,34
+2025-05-28;2025-05-27;Kortköp;Statoil,Halmstad,SE;-887,71
+2025-05-29;2025-05-28;Kortköp;H&M,Trollhättan,SE;-256,69
+2025-05-30;2025-05-29;Kortköp;Gymgrossisten,Örebro,SE;-390,40
+2025-05-30;2025-05-29;Kortköp;Wayne's Coffee,Norrtälje,SE;-735,18
+2025-05-31;2025-05-30;Kortköp;Pressbyrån,Lund,SE;-371,39
+2025-05-31;2025-05-30;Kontantinsättning;Hemköp,Uppsala,SE;305,85
+2025-05-31;2025-05-30;Kortköp;Brothers,Malmö,SE;-948,41
+2025-05-31;2025-05-30;Kontantinsättning;Circle K,Växjö,SE;656,83
+2025-06-01;2025-05-31;Kortköp;MQ,Kalmar,SE;-1062,09

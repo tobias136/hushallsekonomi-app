@@ -12,7 +12,7 @@
 ---
 
 ## 2. Kategorisering
-**a.** Det ska finnas fyra kategorier: `wants`, `needs`, `necessities`, `savings`
+**a.** Det ska finnas fyra kategorier: `wants`, `needs`, `culture`, `savings`
 
 **b.** Vid nya transaktioner där beskrivningen är okänd:
 - Användaren promptas att välja kategori via CLI

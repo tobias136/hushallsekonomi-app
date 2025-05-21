@@ -1,0 +1,296 @@
+[
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 49",
+    "belopp": -844.66,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 82",
+    "belopp": -758.51,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 72",
+    "belopp": -472.2,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-01",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 88",
+    "belopp": -324.38,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-02",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 99",
+    "belopp": -965.77,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-03",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 30",
+    "belopp": -469.28,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-03",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 41",
+    "belopp": -274.2,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-04",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 35",
+    "belopp": -277.37,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-04",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 28",
+    "belopp": -878.0,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-05",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 92",
+    "belopp": -682.98,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-07",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 28",
+    "belopp": -845.7,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-07",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 64",
+    "belopp": -783.79,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-08",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 83",
+    "belopp": -628.98,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-08",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 19",
+    "belopp": -978.49,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-08",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 18",
+    "belopp": -502.83,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-08",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 96",
+    "belopp": -641.63,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-09",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 69",
+    "belopp": -863.52,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-09",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 96",
+    "belopp": -694.82,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-14",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 55",
+    "belopp": -889.37,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-14",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 52",
+    "belopp": -661.88,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-15",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 29",
+    "belopp": -763.66,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-17",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 66",
+    "belopp": -236.66,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-18",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 12",
+    "belopp": -382.32,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-18",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 15",
+    "belopp": -431.51,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-18",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 81",
+    "belopp": -263.83,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-19",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 88",
+    "belopp": -386.23,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-19",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 77",
+    "belopp": -280.8,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-20",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 50",
+    "belopp": -422.38,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-21",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 77",
+    "belopp": -708.55,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-21",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 68",
+    "belopp": -491.87,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-22",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 71",
+    "belopp": -496.14,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-23",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 88",
+    "belopp": -367.61,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-23",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 15",
+    "belopp": -413.58,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-24",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 69",
+    "belopp": -949.32,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-24",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 99",
+    "belopp": -718.43,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-24",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 44",
+    "belopp": -687.3,
+    "kategori": "needs"
+  },
+  {
+    "datum": "2025-05-25",
+    "transaktionstyp": "Överföring",
+    "meddelande": "Lön från arbetsgivare",
+    "belopp": 30000,
+    "kategori": "savings"
+  },
+  {
+    "datum": "2025-05-25",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 38",
+    "belopp": -336.91,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-26",
+    "transaktionstyp": "Överföring",
+    "meddelande": "Till sparkonto",
+    "belopp": -7000,
+    "kategori": "savings"
+  },
+  {
+    "datum": "2025-05-26",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 21",
+    "belopp": -783.3,
+    "kategori": "wants"
+  },
+  {
+    "datum": "2025-05-28",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 1",
+    "belopp": -330.72,
+    "kategori": "culture"
+  },
+  {
+    "datum": "2025-05-29",
+    "transaktionstyp": "Kortköp",
+    "meddelande": "Random butik 93",
+    "belopp": -110.52,
+    "kategori": "wants"
+  }
+]
