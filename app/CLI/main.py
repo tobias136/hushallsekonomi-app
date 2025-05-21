@@ -12,7 +12,7 @@ from app.categorizer.kategorisering import (
     spara_kategorier,
     kategorisera_transaktion,
 )
-from app.reports.reporting import generate_report
+from app.reports.reporting import generate_report, generate_latest_report
 
 
 @click.group()
@@ -59,6 +59,17 @@ def importera(filnamn):
 def report(filepath):
     """Generate a monthly spending summary per category from a JSON transaction file."""
     generate_report(filepath)
+
+
+@cli.command(name="report-latest")
+@click.option(
+    "--save",
+    type=click.Choice(["csv", "markdown", "json"]),
+    help="Save report to file.",
+)
+def report_latest(save):
+    """Skapa rapport från senaste importerade fil i mappen 'data/'."""
+    generate_latest_report(export_format=save)
 
 
 if __name__ == "__main__":

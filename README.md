@@ -55,3 +55,9 @@ köra olika funktioner:
 
     rapportering:
     python3 app/CLI/main.py report data/import_2025-05-03.json
+
+    report latest:
+    python3 app/CLI/main.py report-latest --save csv
+    python3 app/CLI/main.py report-latest --save markdown
+    python3 app/CLI/main.py report-latest --save json
+

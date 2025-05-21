@@ -1,0 +1,11 @@
+✅ Dagens plan: "Implementera rapporteringsfunktion"
+Mål	Status	Kommentar
+📥 Läsa transaktioner från JSON	✅	Läser automatiskt senaste import_*.json
+📆 Gruppera per månad och kategori	✅	group_by_month_and_category() färdig
+📊 Visa rapport i terminalen	✅	Via print_report()
+🧩 Koppla in via CLI	✅	report-latest fungerar
+💾 Spara rapport till CSV	✅	--save csv skapar report_YYYY-MM.csv
+📝 Spara rapport till Markdown	✅	--save markdown fungerar
+📂 Spara rapport till JSON	✅	--save json fungerar
+🧪 Testkörning av CLI	✅	Verifierat under sessionen
+🧠 Språkstandardisering (engelska kommandon)	✅	Infört och dokumenterat
